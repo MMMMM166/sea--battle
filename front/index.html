@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Морской Бой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Морской Бой</h1>
+        <div id="connection-status">Статус: Отключено</div>
+        <div id="turn-indicator" class="turn-indicator">Ожидание начала игры...</div>
+        <div id="room-info">Комната: -</div>
+    </header>
+
+    <div class="game-container">
+        <div class="dock" id="dock"></div>
+
+        <div class="boards-container">
+            <div class="board-wrapper">
+                <h3>Моё поле</h3>
+                <div class="board" id="board"></div>
+            </div>
+
+            <div class="board-wrapper enemy-hidden" id="enemyBoardWrapper">
+                <h3>Поле противника</h3>
+                <div class="board" id="enemyBoard"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="btnClear">Очистить поле</button>
+        <button id="btnRandom">Случайно</button>
+        <button id="btnConfirm">Готово / В бой</button>
+        <button id="btnInvite">Пригласить игрока</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

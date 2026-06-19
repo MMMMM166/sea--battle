@@ -1,0 +1,4 @@
+{"$$indexCreated":{"fieldName":"sessionId","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"roomId","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"sessionId","unique":true}}
+{"$$indexCreated":{"fieldName":"roomId"}}
